@@ -21,6 +21,14 @@ body{
 	margin-top: 0px;
 }
 
+#header a{
+	color: black;
+}
+
+#content-nav a{
+	color: black;
+}
+
 #contact{
 	background-color: lightyellow;
 }
@@ -43,6 +51,10 @@ body{
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 120%;
+}
+
+#description{
+	margin: auto 7em auto 7em;
 }
 
 .resume-table {
@@ -74,3 +86,9 @@ body{
     margin: 5;
     padding-left: 30;
 }
+
+#footer{
+	background-color: lightblue;
+	margin-top: 2em;
+}
+
