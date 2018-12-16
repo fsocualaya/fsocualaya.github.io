@@ -1,10 +1,147 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
 	<title>Fernando Socualaya</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Major+Mono+Display|Raleway" rel="stylesheet">
+	 <script type="text/javascript" src="https://www.utec.edu.pe/sites/all/themes/utec_theme/js/app/vendor/jquery-2.1.1.min.js?pcxyus"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-	<h1>Fernando Socualaya</h1>
-	<p>Welcome to my CV. First commit.</p>
+
+	<!-- Header -->
+	<div id="header" class="container">
+		<img src="res/pp.jpeg" align="right">
+		<h1>Fernando <br>Socualaya</h1>
+		<div id="contact" class="container">
+			<ul class="nav justify-content-center">
+				<li class="nav-item"><i class="fa fa-phone"></i></a>942 - 485 - 060</li>
+				<li class="nav-item"><a href="mailto:fernando.spcs98@gmail.com"><i class="fa fa-envelope"></i> fernando.spcs98@gmail.com</a></li>
+				<li class="nav-item"><a href="https://linkedin.com/in/fsocualaya"><i class="fa fa-linkedin-square"></i> fsocualaya</a></li>
+				<li class="nav-item"><a href="https://www.github.com/fsocualaya"><i class="fa fa-github"></i> fsocualaya</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Content Nav -->
+	<div id="content-nav" class="container">
+		<ul class="nav justify-content-center">
+				<li class="nav-item"><a href="#experience">Experiencia laboral</a></li>
+				<li class="nav-item"><a href="#projects">Proyectos</a></li>
+				<li class="nav-item"><a href="#education">Formación profesional</a></li>
+				<li class="nav-item"><a href="#complementary-skills">Habilidades complementarias</a></li>
+			</ul>
+	</div>
+
+	<!-- Content -->
+	<div id="content" class="container center-block">
+		
+		<!-- Experience -->
+		<div id="experience" class="content-tabs" style="display: none">
+			<hr><h2>Experiencia laboral</h2><hr>
+			<table class="resume-table" align="center">
+				<tr>
+					<td><p>Mayo, 2018 - Diciembre, 2018</p></td>
+					<td>
+						<p>Asistente de Cátedra en UTEC</p>
+						<ul>
+							<li>Elaboración de ejercicios para HackerRank</li>
+							<li>Asesoría en algoritmos, Python</li>
+							<li>Asesoría en programación orientada a objetos, C++</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td><p>Agosto, 2017 - Actualidad</p></td>
+					<td>
+						<p>Profesor en Crack The Code Peru</p>
+						<ul>
+							<li>Enseñanza de pensamiento lógico y computacional a niños de 11 años </li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<!-- Projects -->
+		<div id="projects" class="content-tabs" style="display: none">
+			<hr><h2>Proyectos</h2><hr>
+			<ul>
+				<li>Implementación de un grafo en C++<ul>
+					<li>Breadth First Search</li>
+					<li>Deed First Search</li>
+					<li>Es Bipartito</li>
+					<li>Floyd Warshall</li>
+				</ul>
+			</li>
+				<li>Implementación de un automata C++
+					<ul>
+						<li>Algoritmo de Hopcroft para minimización de autómatas</li>		
+					</ul>
+				</li>
+				<!-- <li>Construcción de la sección de profesores para UTEC</li> -->
+
+			</ul>
+		</div>
+
+		<!-- Education -->
+		<div id="education" class="content-tabs" style="display: none">
+			<hr><h2>Formación profesional</h2><hr>
+			<table class="resume-table">
+				<tr>
+					<td>
+						<p>2017 - Actualidad</p></td>
+					<td>
+						<p>UTEC</p>
+						<p>Ciencia de la computación
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>2015 - 2016</p></td>
+					<td>
+						<p>UNCP</p>
+						<p>Ingeniería de sistemas
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- Complementary Skills -->
+		<div id="complementary-skills" class="content-tabs" style="display: none">
+			<hr><h2>Habilidades complementarias</h2><hr>
+			<table class="resume-table">
+				<tr>
+					<td>sistemas operativos</td>
+					<td>Linux, Windows</td>
+				</tr>
+				<tr>
+					<td>lenguajes de programación</td>
+					<td>C++, Python</td>			
+				</tr>
+				<tr>
+					<td>base de datos</td>
+					<td>PostgreSQL</td>
+				</tr>
+				<tr>
+					<td>web</td>
+					<td>HTML, CSS, Flask</td>
+				</tr>
+				<tr>
+					<td>otros</td>
+					<td>Git flow</td>
+				</tr>
+				<tr>
+					<td>idiomas</td>
+					<td>Inglés</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 </body>
-</html>
+</html> 
