@@ -2,23 +2,31 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+#resume{
+	padding-left: 5%;
+	padding-top: 5%;
+	padding-right: 5%;
+}
+
 #header{
 	background-color: lightblue;
-	margin-top: 2%;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 
 #header img{	
 	/*border-radius: 50%;*/
 	right: 0;
 	float: right;
-	/*bottom: 0;*/
+	bottom: 0;
 	position: relative;
 	width: 104px;
+	display: inline;
 }
 
 #header h1{
 	font-family: 'Major Mono Display', monospace;
-	margin-top: 0px;
+	display: block;
 }
 
 #header a{
@@ -27,6 +35,7 @@ body{
 
 #content-nav a{
 	color: black;
+	text-decoration: none;
 }
 
 #contact{
@@ -39,7 +48,7 @@ body{
 }
 
 #content-nav{
-	margin: 2% auto 2% auto;
+	margin: 1% auto 1% auto;
 	background-color: lightgreen;
 }
 
@@ -51,10 +60,11 @@ body{
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 120%;
+	font-weight: bold;
 }
 
 #description, #experience, #projects, #education, #complementary-skills{
-	margin: auto 7em auto 7em;
+	margin: auto 5% auto 5%;
 }
 
 .resume-table {
@@ -89,6 +99,34 @@ body{
 
 #footer{
 	background-color: lightblue;
-	margin-top: 2em;
+	margin-top: 3%;
+	margin-bottom: 1%;
 }
 
+/*for mobile devices*/
+@media all and (max-width:1080px) {    
+
+	#content-nav{
+		margin-top: 3%;
+	}
+
+    #header img{
+    	display:block;
+    	margin-right: auto;
+    	margin-left: auto;
+    	float: none;
+    	padding-bottom: 1%;
+	}
+
+	#header h1{
+		text-align: center;
+		overflow: hidden;
+		text-overflow: clip;
+		white-space: nowrap;
+		font-size: 2.3rem;
+	}
+}
+
+.current_page_item {
+  font-weight: bold;
+}
