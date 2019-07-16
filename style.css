@@ -4,12 +4,14 @@ body{
 
 #resume{
 	padding-left: 5%;
-	padding-top: 5%;
+	padding-top: 2.5%;
 	padding-right: 5%;
+        padding-bottom: 2.5%;
 }
 
 #header{
-	background-color: lightblue;
+        text-align: center;
+        background-color: lightblue;
 	padding-right: 5%;
 	padding-left: 5%;
 }
