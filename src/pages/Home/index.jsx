@@ -1,12 +1,24 @@
-import { Flex, Image, Box, Text } from "@chakra-ui/react";
+import { Flex, Image, Text, Container } from "@chakra-ui/react";
 
 function Home(props){
     return (
-        <Flex m="4em 4em" textAlign="center" justifyContent="space-evenly">
+        <Flex 
+        m="6em" 
+        justifyContent="space-around">
 
-            <Text alignSelf="center">
-                Hemlo! 
-            </Text>
+            <Container w={["100%", "50%"]}>
+                <Text alignSelf="center" fontSize="5xl">
+                    Hemlo!
+                    <Text fontSize="xl">
+                        I'm a Computer Science student at UTEC (Lima, Peru)
+                        with experience in data structures implementation,
+                        object oriented programming and mobile development. <br/> 
+                        Passionate about learning, teaching and sharing knowledge interested in . 
+                    </Text>  
+                </Text>
+            </Container>
+
+            
 
             <Image src={"img/dev.png"}/>
 
