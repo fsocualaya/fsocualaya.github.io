@@ -1,26 +1,37 @@
-import { Flex, Image, Text, Container } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 
 function Home(props){
     return (
-        <Flex 
-        m="6em" 
-        justifyContent="space-around">
+        <Flex
+            justifyContent={"space-evenly"}
+            flexDirection = {["column", "column", "row"]}
+            m = {["1em 1em", "2em 4em", "4em 8em"]}
+            h = {"100%"}
+            alignItems= "center"
+        >
 
-            <Container w={["100%", "50%"]}>
-                <Text alignSelf="center" fontSize="5xl">
+            <Flex
+                w={["60%", "50%", "40%", "30%"]}
+                alignSelf="center"
+                textAlign={["center", "center", "justify", "justify"]}
+            >
+                <Text 
+                    fontSize={["2xl","3xl","4xl","5xl"]}
+                    mt = {["0em"]}>
                     Hemlo!
-                    <Text fontSize="xl">
-                        I'm a Computer Science student at UTEC (Lima, Peru)
-                        with experience in data structures implementation,
-                        object oriented programming and mobile development. <br/> 
-                        Passionate about learning, teaching and sharing knowledge interested in . 
+                    <Text fontSize={["sm","md","lg","xl"]}>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, explicabo veniam accusantium eum aliquam animi officiis iste iure omnis. Debitis autem expedita commodi dolorum voluptates facilis et vitae cupiditate non.
                     </Text>  
                 </Text>
-            </Container>
+            </Flex>
 
             
 
-            <Image src={"img/dev.png"}/>
+            <Image 
+            src={"img/dev.png"}
+            height={["15vh","20vh","50vh","50vh"]}
+            overflow="hidden"
+            />
 
         </Flex>
     )

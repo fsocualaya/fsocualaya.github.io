@@ -7,11 +7,11 @@ import Experience from './pages/Experience'
 import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import NotFound from './pages/NotFound'
-import Footer from './components/Footer';
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div>
+    <div >
       <Router>
         <Header/>
 
