@@ -1,29 +1,25 @@
-import {GoHeart} from 'react-icons/go'
-
-import {Flex, Text} from '@chakra-ui/react'
+    import {Flex, Grid, Text} from '@chakra-ui/react'
 
 function Footer(props){
     return (
         <Flex
             w ="100%"
             justifyContent="center"
-            position={"absolute"}
+            position={"absolute", "relative"}
             bottom={0}
             bgColor = "black"
             color = "white"
+            minH = "10vh"
+            alignItems="center"
+            textAlign="center"
         >
-            <Text textAlign="center">
-                Made with 
-                <GoHeart
-                    textAlign="center"
-                    color="red"
-                />
-                by @fsocualaya 
-
+            <Text>
+                Made with 💙 by @fsocualaya
                 <br/>
-
-                Hire me please
+                🇵🇪 Lima, 2021 
             </Text>
+            
+            
         </Flex>
     )
 }

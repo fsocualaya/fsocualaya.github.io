@@ -1,8 +1,12 @@
+import {Flex} from '@chakra-ui/react'
+
 function Projects(props){
     return (
-        <div>
+        <Flex
+            h="80vh"
+        >
             This is Projects
-        </div>
+        </Flex>
     )
 }
 

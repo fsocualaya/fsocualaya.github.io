@@ -6,14 +6,17 @@ function Header(props){
         <Flex
             as="nav"
             justify="space-between"
-            m={["1em 2em","1em 4em"]}
-            flexDirection={["column", "column", "row"]}
+            flexDirection={["column", "row"]}
             alignItems="center"
+            bg="black"
+            color ="white"
+            h = {["100%", "10vh"]}
+            p = {["1vh 5vw","0vh 5vw"]}
         >
             <Link 
-            textDecor="none" 
-            color="black"
-            alignSelf="center"
+            textDecor="none"
+            fontWeight="bolder" 
+            color="white"
             as={ReactRouter} 
             to="/">
                 Fernando Socualaya
@@ -22,36 +25,31 @@ function Header(props){
             <Flex
                 alignItems="center"
                 w= {["100%", "100%", "60%"]}
-                justifyContent={["center", "center", "flex-end"]}
-                flexDir={["column", "column", "row"]}
+                justifyContent={["center", "flex-end"]}
+                flexDir={["column", "row"]}
                 textAlign="center"
-                m = {["2em"]}
             >
                 <Link  
-                    mr="2em"
-                    ml="2em"
-                    mt={"2em", "0em"}
+                    m = {["1vh 2vw","0vh 2vw"]}
                     as={ReactRouter} 
                     to='/about'>
                     About
                 </Link>
                 
                 <Link 
-                    mr="2em"
-                    ml="2em"
+                    m = {["1vh 2vw","0vh 2vw"]}
                     as={ReactRouter} 
                     to='/projects'>
                     Projects
                 </Link>
                 
-                <Link
-                    mr="2em"
-                    ml="2em"
+                {/* <Link
+                    m = {["1vh 2vw","0vh 2vw"]}
                     as={ReactRouter} 
                     to='/contact'
                 >
                     Contact
-                </Link>
+                </Link> */}
 
             </Flex>
 

@@ -8,12 +8,18 @@ import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import NotFound from './pages/NotFound'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
+import { Box } from '@chakra-ui/react'
 
 function App() {
   return (
-    <div >
+    <Box
+      minH = "100vh"
+      pos= "relative"
+    >
       <Router>
         <Header/>
+        <Contact/>
 
         <Switch>
           <Route exact path='/' component={Home}/>
@@ -27,7 +33,7 @@ function App() {
 
         <Footer/>
       </Router>
-    </div>
+    </Box>
   );
 }
 
