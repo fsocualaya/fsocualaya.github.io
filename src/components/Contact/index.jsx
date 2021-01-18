@@ -1,56 +1,70 @@
 import {RiLinkedinLine, RiPhoneLine, RiGithubFill, RiMailLine} from 'react-icons/ri'
 import {GoFilePdf} from 'react-icons/go'
 
-import { Box, Center, Icon} from "@chakra-ui/react";
+import { Box, Center, Icon, Link} from "@chakra-ui/react";
+
+import Resume from "../../assets/docs/Socualaya_Fernando_Resume_EN.pdf"
 
 function Contact(props){
 
+    
+
     return (
         <Box 
-            position="fixed"
+            position={["relative","fixed"]}
             top={"50%"}
             transform={"translateY(-50%)"}
-            overflow="hidden"
-            bgColor="black"
+            bgColor="#080808"
             color="white"
+            display={["flex", "grid"]}
+            justifyContent={["center",""]}
         >
 
-            <Center p="1vw" objectFit="fill"
-            _hover={{backgroundColor:"gray.900", color:"white"}}>
+            {/* <Center p="1vw"
+            _hover={{backgroundColor:"gray.900", color:"white"}}
+            >
                 <Icon 
                 as ={RiPhoneLine}
                 boxSize="2vw"
                 />
-            </Center>
+            </Center> */}
             
-            <Center p="1vw"
-            _hover={{backgroundColor:"gray.900", color:"white"}}>
-                <Icon
-                as={RiLinkedinLine}
-                boxSize="2vw"
-                />                    
-            </Center>
-            
-            <Center p="1vw"
-            _hover={{backgroundColor:"gray.900", color:"white"}}>
-                <Icon 
-                as ={RiGithubFill}
-                boxSize="2vw"/>
-            </Center>
-            
-            <Center p="1vw"
-            _hover={{backgroundColor:"gray.900", color:"white"}}>
-                <Icon 
-                as ={RiMailLine}
-                boxSize="2vw"/>
-            </Center>
+            <Link href="https://linkedin.com/in/fsocualaya" isExternal>
+                <Center p="1vw"
+                _hover={{backgroundColor:"gray.900", color:"white"}}>
+                        <Icon
+                        as={RiLinkedinLine}
+                        boxSize="2vw"
+                        />
+                </Center>
+            </Link>                    
 
-            <Center p="1vw"
-            _hover={{backgroundColor:"gray.900", color:"white"}}>
-                <Icon 
-                as ={GoFilePdf}
-                boxSize="2vw"/>    
-            </Center>
+            <Link href="https://github.com/fsocualaya" isExternal>
+                <Center p="1vw"
+                _hover={{backgroundColor:"gray.900", color:"white"}}>
+                        <Icon 
+                        as ={RiGithubFill}
+                        boxSize="2vw"/>
+                </Center>
+            </Link>
+
+            <Link href="mailto:fernando.socualaya@utec.edu.pe">
+                <Center p="1vw"
+                _hover={{backgroundColor:"gray.900", color:"white"}}>
+                        <Icon 
+                        as ={RiMailLine}
+                        boxSize="2vw"/>
+                </Center>
+            </Link>
+
+            <Link href={ Resume } download>
+                <Center p="1vw"
+                _hover={{backgroundColor:"gray.900", color:"white"}}>
+                        <Icon 
+                        as ={GoFilePdf}
+                        boxSize="2vw"/>
+                </Center>
+            </Link>    
             
         </Box>
     )

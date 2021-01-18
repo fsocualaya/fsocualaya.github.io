@@ -1,8 +1,14 @@
+import {Flex, Heading} from '@chakra-ui/react'
+
 function Experience(props){
     return (
-        <div>
-            This is Experience
-        </div>
+        <Flex
+            h="60vh"
+        >
+            <Heading as="h1">
+                This is Experience
+            </Heading>
+        </Flex>
     )
 }
 

@@ -8,17 +8,19 @@ function Header(props){
             justify="space-between"
             flexDirection={["column", "row"]}
             alignItems="center"
-            bg="black"
+            bgColor="#080808"
             color ="white"
             h = {["100%", "10vh"]}
             p = {["1vh 5vw","0vh 5vw"]}
+            position="relative"
         >
             <Link 
             textDecor="none"
             fontWeight="bolder" 
             color="white"
             as={ReactRouter} 
-            to="/">
+            to="/"
+            >
                 Fernando Socualaya
             </Link>
 
@@ -31,6 +33,7 @@ function Header(props){
             >
                 <Link  
                     m = {["1vh 2vw","0vh 2vw"]}
+                    _focus={{fontWeight: "bolder"}}
                     as={ReactRouter} 
                     to='/about'>
                     About
@@ -38,18 +41,11 @@ function Header(props){
                 
                 <Link 
                     m = {["1vh 2vw","0vh 2vw"]}
-                    as={ReactRouter} 
+                    _focus={{fontWeight: "bolder"}}
+                    as={ReactRouter}
                     to='/projects'>
                     Projects
                 </Link>
-                
-                {/* <Link
-                    m = {["1vh 2vw","0vh 2vw"]}
-                    as={ReactRouter} 
-                    to='/contact'
-                >
-                    Contact
-                </Link> */}
 
             </Flex>
 

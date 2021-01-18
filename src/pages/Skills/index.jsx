@@ -1,8 +1,14 @@
+import {Flex, Heading} from '@chakra-ui/react'
+
 function Skills(props){
     return (
-        <div>
-            This is Skills
-        </div>
+        <Flex
+            h="60vh"
+        >
+            <Heading as="h1">
+                This is Skills
+            </Heading>
+        </Flex>
     )
 }
 

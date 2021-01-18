@@ -1,4 +1,4 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Text, Heading} from "@chakra-ui/react";
 
 function Home(props){
     return (
@@ -13,15 +13,21 @@ function Home(props){
             <Flex
                 w={["60%", "50%", "40%", "30%"]}
                 textAlign={["center", "justify"]}
+                flexDir="column"
             >
-                <Text 
+                <Heading 
                     fontSize={["2xl","3xl","4xl","5xl"]}
-                    m = {["0em 0em"]}>
+                    m = {["0em 0em"]}
+                    as="h2"
+                    >
                     Hemlo!
-                    <Text fontSize={["sm","md","lg","xl"]}>
+                </Heading>
+
+                <br/>
+
+                <Text as="p" fontSize={["sm","md","lg","xl"]}>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, explicabo veniam accusantium eum aliquam animi officiis iste iure omnis. Debitis autem expedita commodi dolorum voluptates facilis et vitae cupiditate non.
-                    </Text>  
-                </Text>
+                </Text>  
             </Flex>
 
             

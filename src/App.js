@@ -2,20 +2,21 @@ import {BrowserRouter as Router, Route, NavLink, Redirect, Switch} from 'react-r
 
 import Header from './components/Header'
 import Home from './pages/Home/'
-import Education from './pages/Education'
-import Experience from './pages/Experience'
 import Projects from './pages/Projects'
-import Skills from './pages/Skills'
+import About from './pages/About'
 import NotFound from './pages/NotFound'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import { Box } from '@chakra-ui/react'
+
 
 function App() {
   return (
     <Box
       minH = "100vh"
       pos= "relative"
+      backgroundImage={"url('img/bg_alt.jpeg')"}
+      bgSize="cover"
     >
       <Router>
         <Header/>
@@ -23,10 +24,9 @@ function App() {
 
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route exact path='/education' component={Education}/>
-          <Route exact path='/experience' component={Experience}/>
-          <Route exact path='/projects' component={Projects}/>
-          <Route exact path='/skills' component={Skills}/>
+          
+          <Route path='/projects' component={Projects}/>
+          <Route path='/about' component={About}/>
           <Route path='/404' component={NotFound}/>
           <Redirect to='/404'/>
         </Switch>
