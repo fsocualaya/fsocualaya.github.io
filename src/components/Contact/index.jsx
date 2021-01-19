@@ -1,4 +1,4 @@
-import {RiLinkedinLine, RiPhoneLine, RiGithubFill, RiMailLine} from 'react-icons/ri'
+import {RiLinkedinLine, RiGithubFill, RiMailLine} from 'react-icons/ri'
 import {GoFilePdf} from 'react-icons/go'
 
 import { Box, Center, Icon, Link} from "@chakra-ui/react";
@@ -7,17 +7,16 @@ import Resume from "../../assets/docs/Socualaya_Fernando_Resume_EN.pdf"
 
 function Contact(props){
 
-    
-
     return (
         <Box 
-            position={["relative","fixed"]}
-            top={"50%"}
+            position={["relative","relative","fixed"]}
+            top={["","50%"]}
             transform={"translateY(-50%)"}
             bgColor="#080808"
             color="white"
-            display={["flex", "grid"]}
+            display={["flex", "flex", "grid"]}
             justifyContent={["center",""]}
+            zIndex={100}
         >
 
             {/* <Center p="1vw"
@@ -34,7 +33,7 @@ function Contact(props){
                 _hover={{backgroundColor:"gray.900", color:"white"}}>
                         <Icon
                         as={RiLinkedinLine}
-                        boxSize="2vw"
+                        boxSize={["4vw","4vw","3vw","2vw"]}
                         />
                 </Center>
             </Link>                    
@@ -44,7 +43,7 @@ function Contact(props){
                 _hover={{backgroundColor:"gray.900", color:"white"}}>
                         <Icon 
                         as ={RiGithubFill}
-                        boxSize="2vw"/>
+                        boxSize={["4vw","4vw", "3vw","2vw"]}/>
                 </Center>
             </Link>
 
@@ -53,7 +52,7 @@ function Contact(props){
                 _hover={{backgroundColor:"gray.900", color:"white"}}>
                         <Icon 
                         as ={RiMailLine}
-                        boxSize="2vw"/>
+                        boxSize={["4vw","4vw", "3vw","2vw"]}/>
                 </Center>
             </Link>
 
@@ -62,7 +61,7 @@ function Contact(props){
                 _hover={{backgroundColor:"gray.900", color:"white"}}>
                         <Icon 
                         as ={GoFilePdf}
-                        boxSize="2vw"/>
+                        boxSize={["4vw","4vw", "3vw", "2vw"]}/>
                 </Center>
             </Link>    
             

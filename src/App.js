@@ -13,10 +13,13 @@ import { Box } from '@chakra-ui/react'
 function App() {
   return (
     <Box
-      minH = "100vh"
+      h = "100%"
       pos= "relative"
-      backgroundImage={"url('img/bg_alt.jpeg')"}
+      bgImage={"url('img/bg/bg_alt.jpeg')"}
+      bgPos="center -20%"
       bgSize="cover"
+      bgRepeat="no-repeat"
+      bgColor="#f2f2f2"
     >
       <Router>
         <Header/>

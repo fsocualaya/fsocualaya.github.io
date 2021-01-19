@@ -1,22 +1,25 @@
-    import {Flex, Grid, Text} from '@chakra-ui/react'
+    import {Flex, Text} from '@chakra-ui/react'
 
 function Footer(props){
     return (
         <Flex
             w ="100%"
             justifyContent="center"
-            position={"absolute", "relative"}
+            position="relative"
             bottom={0}
-            bgColor = "#080808"
+            bgColor = "#070707"
             color = "white"
             minH = "10vh"
             alignItems="center"
             textAlign="center"
         >
-            <Text>
-                Made with 💙 by @fsocualaya
+            <Text
+                lineHeight={1.5}
+                m={0}
+            >
+                Made by @fsocualaya
                 <br/>
-                🇵🇪 Lima, 2021 
+                🇵🇪 2021 
             </Text>
             
             

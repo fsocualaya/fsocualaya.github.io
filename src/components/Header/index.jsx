@@ -8,9 +8,9 @@ function Header(props){
             justify="space-between"
             flexDirection={["column", "row"]}
             alignItems="center"
-            bgColor="#080808"
+            bgColor="#070707"
             color ="white"
-            h = {["100%", "10vh"]}
+            h = {["10vh"]}
             p = {["1vh 5vw","0vh 5vw"]}
             position="relative"
         >

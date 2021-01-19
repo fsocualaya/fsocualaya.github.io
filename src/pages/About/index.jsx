@@ -1,9 +1,8 @@
-import {Center, Flex, Text, Link, Heading} from '@chakra-ui/react'
-import { BrowserRouter as Router, Link as ReactRouter, Redirect, Route, Switch, useRouteMatch} from 'react-router-dom'
+import {Center, Flex, Link, Heading} from '@chakra-ui/react'
+import { Link as ReactRouter, Redirect, Route, Switch, useRouteMatch} from 'react-router-dom'
 
 import Education from '../Education'
 import Experience from '../Experience'
-import NotFound from '../NotFound'
 import Skills from '../Skills'
 
 function About(props){
@@ -11,20 +10,26 @@ function About(props){
     let {path, url} = useRouteMatch();
 
     return(
-        <Center
-            h ="80vh"
+        <Flex
+            minH ="80vh"
             flexDir="column"
+            position="relative"
+            alignItems="center"
         >
             <Heading 
                 as="h2"
-                m={0}>
+                pt={10}
+                m={0}
+                >
                 About me
             </Heading>
             
             <Flex
-                w = "40vw"
+                w = {["80%", "60vw","40vw"]}
                 justifyContent="space-around"
-                pt = "1vw"
+                p = "1vw 1vh"
+                flexDir="row"
+                alignItems="center"
             >
                 <Link 
                     _focus={{fontWeight: "bolder"}}
@@ -57,7 +62,7 @@ function About(props){
                 <Redirect from="/*/*" to={"/404"}/>
             </Switch>
 
-        </Center>
+        </Flex>
     )
 }
 
