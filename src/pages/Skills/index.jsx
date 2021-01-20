@@ -5,13 +5,13 @@ function Skill(props){
     return (
         <Flex 
             flexDir="column"
-            justifyContent="space-between"
+            justifyContent="center"
             alignItems="center"
             textAlign="center"
-            w="5vw"
+            maxW="33%"
             >
             <Image src={props.imageSrc}
-                w="2vw"
+                w={["8vw","6vw","4vw","2vw"]}
             />
             <Text m={0}
                 fontSize="xs"
@@ -30,6 +30,7 @@ function Skills(props){
             flexWrap="wrap"
             w="80vw"
             pb={15}
+            pt={15}
         >
 
             <SkillsCard title="Operating Systems"

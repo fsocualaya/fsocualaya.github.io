@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, NavLink, Redirect, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom'
 
 import Header from './components/Header'
 import Home from './pages/Home/'
@@ -9,13 +9,15 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import { Box } from '@chakra-ui/react'
 
+import bgImg from './assets/bg/bg_alt.jpeg'
 
 function App() {
+
   return (
     <Box
       h = "100%"
       pos= "relative"
-      bgImage={"url('img/bg/bg_alt.jpeg')"}
+      bgImage={`url(${bgImg})`}
       bgPos="center -20%"
       bgSize="cover"
       bgRepeat="no-repeat"

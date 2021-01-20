@@ -27,7 +27,7 @@ function About(props){
             <Flex
                 w = {["80%", "60vw","40vw"]}
                 justifyContent="space-around"
-                p = "1vw 1vh"
+                p = "1vw"
                 flexDir="row"
                 alignItems="center"
             >

@@ -1,4 +1,4 @@
-import {Divider, Flex, Spacer, Text} from '@chakra-ui/react'
+import {Divider, Flex, Text} from '@chakra-ui/react'
 // import { useState } from 'react';
 
 function SkillsCard(props) {
@@ -10,12 +10,17 @@ function SkillsCard(props) {
             <Flex
                 flexDir="column"
                 alignItems="center"
+                w="80%"
+                flexGrow={1}
+                justifyContent="flex-start"
             >
                 <Text fontSize="sm">{category}</Text>
 
                 <Flex 
                     flexWrap="wrap"
-                    justifyContent="space-between"
+                    w="100%"    
+                    justifyContent="space-around"
+                    flexGrow={1}
                 >
                     {
                         props.children.filter(
@@ -34,11 +39,12 @@ function SkillsCard(props) {
             boxShadow="dark-lg"
             rounded="md"
             bgColor="#f2f2f2"
-            w = {["60%","20vw"]}
-            h = {"45vh"}
+            w = {["60vw","45vw", "30vw","15vw"]}
+            h = {"40vh"}
             flexDir="column"
             alignItems="center"
             textAlign="center"
+            overflow="auto"
         >
             <Text
                 fontWeight="bold"
@@ -48,9 +54,18 @@ function SkillsCard(props) {
 
             <Divider/>
 
-            {skills}
+            <Flex
+                flexDir="column"
+                alignItems="center"
+                w="100%"
+                pb={3}
+                justifyContent="space-between"
+                flexGrow={1}
+            >
+                {skills}            
+            </Flex>            
+            
 
-            <Spacer/>
 
         </Flex>
     )    
