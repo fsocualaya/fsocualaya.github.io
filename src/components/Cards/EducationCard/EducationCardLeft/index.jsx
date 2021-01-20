@@ -37,7 +37,7 @@ function EducationCardLeft(props){
                         fontWeight="light"
                         fontSize="sm"
                     >
-                        {props.field} <br/> {props.role}
+                        {props.field} <br/> {props.role} <br/> {props.location}
                     </Text>
                     
                 </Flex>

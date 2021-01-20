@@ -15,6 +15,7 @@ function About(props){
             flexDir="column"
             position="relative"
             alignItems="center"
+            justifyContent="center"
         >
             <Heading 
                 as="h2"

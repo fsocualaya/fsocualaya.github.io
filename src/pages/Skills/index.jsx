@@ -144,7 +144,7 @@ function Skills(props){
                 <Skill
                     imageSrc="../img/skills/back/nodejs.png"
                     name="Node.js"
-                    expertise="Intermediate"
+                    expertise="Beginner"
                 />
                 <Skill
                     imageSrc="../img/skills/back/spring.png"

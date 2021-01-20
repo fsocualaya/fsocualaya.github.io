@@ -18,6 +18,7 @@ function Education(props){
                 field="Computer Science"
                 role="4th year student"
                 url="https://utec.edu.pe/"
+                location="🇵🇪 : [ 2017 - Current ]"
             />
 
             <EducationCardRight
@@ -26,6 +27,7 @@ function Education(props){
                 field="AI For Local Value"
                 role="Attendant"
                 url="https://globalgers.org/"
+                location="👨‍💻 : [2020]"
             />
             
         </Center>

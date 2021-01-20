@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import { Box } from '@chakra-ui/react'
 
-import bgImg from './assets/bg/bg_alt.jpeg'
+import bgImg from './assets/bg/bg_blue.jpeg'
 
 function App() {
 
@@ -22,6 +22,7 @@ function App() {
       bgSize="cover"
       bgRepeat="no-repeat"
       bgColor="#f2f2f2"
+      color="#05154a"
     >
       <Router>
         <Header/>

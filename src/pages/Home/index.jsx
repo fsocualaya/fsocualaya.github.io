@@ -25,8 +25,14 @@ function Home(props){
 
                 <br/>
 
-                <Text as="p" fontSize={["sm","md","lg","xl"]}>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, explicabo veniam accusantium eum aliquam animi officiis iste iure omnis. Debitis autem expedita commodi dolorum voluptates facilis et vitae cupiditate non.
+                <Text as="p" fontSize={["sm","sm","md","lg"]}>
+                    I'm a computer science student with experience in data structures implementation, object
+                    oriented programming, web and mobile development.
+                    <br/>
+                    Passionate about <b>learning</b>, teaching and sharing knowledge. 
+                    <br/>
+                    <b>Wanna stay in touch?</b> You'll find my social media at your left (or top). Don't hesitate 
+                    to contact me. <br/> <br/> Cheers and vibes!
                 </Text>  
             </Flex>
 

@@ -12,11 +12,12 @@ function Contact(props){
             position={["relative","relative","fixed"]}
             top={["","50%"]}
             transform={"translateY(-50%)"}
-            bgColor="#080808"
+            bgColor="#05154a"
             color="white"
-            display={["flex", "flex", "grid"]}
+            display={["flex", "flex", "block"]}
             justifyContent={["center",""]}
             zIndex={100}
+            mt={["15",""]}
         >
 
             {/* <Center p="1vw"
@@ -33,7 +34,7 @@ function Contact(props){
                 _hover={{backgroundColor:"gray.900", color:"white"}}>
                         <Icon
                         as={RiLinkedinLine}
-                        boxSize={["4vw","4vw","3vw","2vw"]}
+                        boxSize={["4vw","4vw","3vw","100%"]}
                         />
                 </Center>
             </Link>                    

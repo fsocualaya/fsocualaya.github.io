@@ -8,16 +8,15 @@ function Header(props){
             justify="space-between"
             flexDirection={["column", "row"]}
             alignItems="center"
-            bgColor="#070707"
-            color ="white"
+            bgColor="#c1f7f9"
+            color ="#031a4c"
             h = {["10vh"]}
             p = {["1vh 5vw","0vh 5vw"]}
             position="relative"
         >
             <Link 
-            textDecor="none"
-            fontWeight="bolder" 
-            color="white"
+            
+            fontWeight="bolder"
             as={ReactRouter} 
             to="/"
             >
