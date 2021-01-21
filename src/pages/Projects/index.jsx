@@ -33,7 +33,7 @@ function Projects(props){
                     imageSrc={"img/proj/portfolio.png"}
                     url="https://github.com/fsocualaya/fsocualaya.github.io"
                     name="Personal Portfolio"
-                    tech={["front/react.svg","pl/js.png", "other/docker.png"]}
+                    tech={["front/react.svg","pl/js.png"]}
                     year={"2021"}
                 />
 
@@ -41,7 +41,7 @@ function Projects(props){
                     imageSrc={"img/proj/sperm_det.png"}
                     url="https://drive.google.com/file/d/1-6f6Lr6YUYYejrU-IWUetCRfC59ARPCD/view?usp=sharing"
                     name="Sperm Detection"
-                    tech={["pl/python.png","ai_ds/darknet.png"]}
+                    tech={["pl/python.png","ai_ds/darknet.png", "other/docker.png"]}
                     year={"2020"}
                 />
 
