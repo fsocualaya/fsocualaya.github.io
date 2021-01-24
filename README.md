@@ -9,4 +9,4 @@ npm install
 npm start
 ```
 
-If you have any questions or commnets, don't hesitate to contact me. 
+If you have any questions or comments, don't hesitate to contact me. 
