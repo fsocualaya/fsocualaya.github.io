@@ -28,9 +28,9 @@ function About(props){
             
             <Flex
                 w = {["80%", "60vw","40vw"]}
-                justifyContent="space-around"
+                justifyContent={["center", "center"]}
+                flexDir={["column", "row"]}
                 p = "1vw"
-                flexDir="row"
                 alignItems="center"
                 fontSize={'2xl'}
             >
@@ -38,6 +38,7 @@ function About(props){
                     _focus={{fontWeight: "bolder"}}
                     as={ReactRouter}
                     to={`${url}/education`}
+                    m = {["1vh 2vw","0vh 2vw"]}
                     >
                     Education
                 </Link>
@@ -45,14 +46,18 @@ function About(props){
                 <Link 
                     _focus={{fontWeight: "bolder"}}
                     as={ReactRouter}
-                    to={`${url}/experience`}>
+                    to={`${url}/experience`}
+                    m = {["1vh 2vw","0vh 2vw"]}
+                    >
                     Experience
                 </Link>
 
                 <Link 
                     _focus={{fontWeight: "bolder"}}
                     as={ReactRouter}
-                    to={`${url}/skills`}>
+                    to={`${url}/skills`}
+                    m = {["1vh 2vw","0vh 2vw"]}
+                    >
                     Skills
                 </Link>
                 
