@@ -8,16 +8,22 @@ function Experience(props){
             flexDir={["row","row", "row"]}
             flexWrap="wrap"
         >
-            {/* <Heading as="h1">
-                This is Experience
-            </Heading> */}
+            
+            <ExperienceCard
+                imageSrc="../img/exp/cmkt-blue.webp"
+                company="CryptoMarket"
+                job="Software Engineer"
+                location="🧑🏽‍💻"
+                period="2021 - Current"
+                url = "https://cryptomkt.com"
+            />
 
             <ExperienceCard
                 imageSrc="../img/exp/bevertec.png"
                 company="Bevertec"
                 job="Software Engineering Intern"
                 location="🇵🇪"
-                period="2020 - Current"
+                period="2020 - 2021"
                 url="https://www.bevertec.com/en/index-en/"
             />
 

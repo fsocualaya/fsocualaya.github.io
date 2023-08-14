@@ -12,13 +12,14 @@ function ProjectCard(props) {
             <Flex
                 boxShadow="dark-lg"
                 rounded="md"
-                bgColor="#f2f2f2"
-                _hover={{bgColor:"#dadada"}}
+                bgColor="#54B4B7"
+                _hover={{backgroundColor:"#04050A", border:'2px solid #54B4B7',color:"#D6DAE7"}}
                 flexDir="column"
                 w={["60vw","35vw","20vw"]}
                 h="100%"
                 alignItems="center"
                 m={3}
+                color={"black"}
             >
                 <Image
                     src={props.imageSrc}
@@ -52,8 +53,10 @@ function ProjectCard(props) {
                     >
                         {props.tech.map((techUrl) => (
                             <Image
+                                key={techUrl}
                                 src={`../img/skills/${techUrl}`}
-                                w={["1.5vw"]}
+                                maxW={["1.5vw"]}
+                                maxH={"1.5vw"}
                             />
                         ))
                         }

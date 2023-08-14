@@ -6,8 +6,8 @@ function SkillsCard(props) {
     // TODO: Handle single skill case. Filter fails when it is no iterable.
 
     const skills = props.categories.map((category) => (
-
             <Flex
+                key={category}
                 flexDir="column"
                 alignItems="center"
                 w="80%"
@@ -17,11 +17,12 @@ function SkillsCard(props) {
                 <Text fontSize="sm">{category}</Text>
 
                 <Flex 
+
                     flexWrap="wrap"
                     w="100%"    
                     justifyContent="space-around"
                     flexGrow={1}
-                >
+                    >
                     {
                         props.children.filter(
                             child => child.props.expertise === category
@@ -34,21 +35,22 @@ function SkillsCard(props) {
     
     return(
         <Flex
+            key= {props.title}
             m={3}
             p={3}
             boxShadow="dark-lg"
             rounded="md"
-            bgColor="#f2f2f2"
+            bgColor="#90e0ef"
             w = {["60vw","45vw", "30vw","15vw"]}
             h = {"40vh"}
             flexDir="column"
             alignItems="center"
             textAlign="center"
             overflow="auto"
+            color={'black'}
         >
             <Text
-                fontWeight="bold"
-            >
+                fontWeight="bold">
                 {props.title}
             </Text>
 

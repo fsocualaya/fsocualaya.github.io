@@ -4,6 +4,7 @@ import SkillsCard from '../../components/Cards/SkillsCard'
 function Skill(props){
     return (
         <Flex 
+            key = {props.name}
             flexDir="column"
             justifyContent="center"
             alignItems="center"
@@ -33,7 +34,8 @@ function Skills(props){
             pt={15}
         >
 
-            <SkillsCard title="Operating Systems"
+            <SkillsCard 
+                title="Operating Systems"
                 categories = {["Advanced", "Intermediate"]}
             >
                 <Skill 
@@ -41,7 +43,6 @@ function Skills(props){
                     name="Other Linux Based Distributions "
                     expertise="Intermediate"
                 />
-
                 <Skill 
                     imageSrc="../img/skills/os/ubuntu.svg"
                     name="Ubuntu"
@@ -79,19 +80,14 @@ function Skills(props){
                     name="Javascript"
                     expertise="Intermediate"
                 />
-                <Skill
+                {/* <Skill
                     imageSrc="../img/skills/pl/golang.png"
                     name="Golang"
                     expertise="Intermediate"
-                />
+                /> */}
                 <Skill
                     imageSrc="../img/skills/pl/r.png"
                     name="R"
-                    expertise="Beginner"
-                />
-                <Skill
-                    imageSrc="../img/skills/pl/dart.png"
-                    name="Dart"
                     expertise="Beginner"
                 />
             </SkillsCard>

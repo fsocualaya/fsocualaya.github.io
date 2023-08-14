@@ -8,6 +8,7 @@ function Projects(props){
             flexDir="column"
             position="relative"
             alignItems="center"
+            color={'#54B4B7'}
         >
             <Heading 
                 as="h2"
@@ -18,7 +19,7 @@ function Projects(props){
             </Heading>
 
             <Text>
-                Click for source code or preview. 
+                Click in the cards for source code or preview. 
             </Text>
 
             <Flex
@@ -33,7 +34,15 @@ function Projects(props){
                     imageSrc={"img/proj/portfolio.png"}
                     url="https://github.com/fsocualaya/fsocualaya.github.io"
                     name="Personal Portfolio"
-                    tech={["front/react.svg","pl/js.png"]}
+                    tech={["front/react.svg","pl/js.png", "front/html.png", "front/chakra.png"]}
+                    year={"2023"}
+                />
+
+                <ProjectCard
+                    imageSrc={"img/proj/tweetchain.png"}
+                    url="https://github.com/fsocualaya/tweetchain"
+                    name= "Tweetchain"
+                    tech={["front/react.svg", "other/docker.png", "back/nodejs.png", "other/eth.png"]}
                     year={"2021"}
                 />
 
