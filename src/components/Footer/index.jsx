@@ -7,9 +7,8 @@ function Footer(props){
             justifyContent="center"
             position="relative"
             bottom={0}
-            bgColor = "#05154a"
             color = "white"
-            minH = "10vh"
+            minH = "5vh"
             alignItems="center"
             textAlign="center"
         >

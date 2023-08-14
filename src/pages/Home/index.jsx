@@ -1,49 +1,62 @@
-import { Flex, Image, Text, Heading} from "@chakra-ui/react";
+import { Link,Flex, Image, Text, Heading} from "@chakra-ui/react";
+import { Link as ReactRouter } from "react-router-dom";
+import TypingAnimation from "../../utils/animations/TypingAnimation";
 
 function Home(props){
     return (
         <Flex
             justifyContent={"space-evenly"}
             flexDirection = {["column", "row"]}
-            h = {"80vh"}
+            h = {"93vh"}
+            w = {"100vw"}
             alignItems= "center"
             marginBottom="0em"
+            color="#D6DAE7"
         >
 
             <Flex
-                w={["60%", "50%", "40%", "30%"]}
-                textAlign={["center", "justify"]}
-                flexDir="column"
-            >
+                w={["70%", "60%", "50%", "40%"]}
+                textAlign={["center", "center"]}
+                flexDir="column">
+                
                 <Heading 
                     fontSize={["2xl","3xl","4xl","5xl"]}
                     m = {["0em 0em"]}
-                    as="h2"
-                    >
-                    Hemlo!
+                    as="h1">
+                    <TypingAnimation text="Hi, I'm Fernando"/>
+                    
                 </Heading>
-
-                <br/>
-
-                <Text as="p" fontSize={["sm","sm","md","lg"]}>
-                    I'm a computer science student with experience in data structures implementation, object
-                    oriented programming, web and mobile development.
-                    <br/>
-                    Passionate about <b>learning</b>, teaching and sharing knowledge. 
-                    <br/>
-                    <b>Wanna stay in touch?</b> You'll find my social media at your left (or top). Don't hesitate 
-                    to contact me. <br/> <br/> Cheers and vibes!
-                </Text>  
+                <Text
+                    fontSize="2xl">
+                    Software Engineer
+                </Text>
+                
+                <Flex
+                alignItems="center"
+                w= {["100%", "100%", "100%"]}
+                justifyContent={["center", "center"]}
+                flexDir={["column", "row"]}
+                textAlign="center"
+                fontSize={'2xl'}
+                >
+                    <Link  
+                        m = {["1vh 2vw","0vh 2vw"]}
+                        _focus={{fontWeight: "bolder"}}
+                        as={ReactRouter} 
+                        to='/about'
+                        >
+                        About
+                    </Link>
+                    
+                    <Link 
+                        m = {["1vh 2vw","0vh 2vw"]}
+                        _focus={{fontWeight: "bolder"}}
+                        as={ReactRouter}
+                        to='/projects'>
+                        Projects
+                    </Link>
+                </Flex>
             </Flex>
-
-            
-
-            <Image 
-            src={"img/dev.png"}
-            height={["30vh","40vh","50vh","50vh"]}
-            overflow="hidden"
-            />
-
         </Flex>
     )
 }

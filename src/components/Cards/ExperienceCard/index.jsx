@@ -4,6 +4,7 @@ function ExperienceCard(props) {
 
     return(
         <Link
+            key ={props.company}
             _hover={{textDecoration:"none"}}
             href={props.url}
             isExternal
@@ -11,19 +12,19 @@ function ExperienceCard(props) {
             <Flex
                 flexDir="column"
                 alignItems="center"
-                backgroundColor="#f2f2f2"
+                backgroundColor="#90e0ef"
                 justifyContent="space-around"
                 m={3}
                 p={3}
-                _hover={{bgColor:"#dadada"}}
+                _hover={{backgroundColor:"#04050A", border:'2px solid #54B4B7',color:"#D6DAE7"}}
                 h={["30vh"]}
                 w={["30vw", "30vw","15vw"]}
                 boxShadow="dark-lg"
                 rounded="md"
+                color={"black"}
             >
                 <Center
                     h="40%"
-                    centerContent
                 >
                     <Image
                         src={props.imageSrc}

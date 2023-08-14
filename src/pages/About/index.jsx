@@ -11,11 +11,12 @@ function About(props){
 
     return(
         <Flex
-            minH ="80vh"
+            minH ="93vh"
             flexDir="column"
             position="relative"
             alignItems="center"
             justifyContent="center"
+            color="#54B4B7"
         >
             <Heading 
                 as="h2"
@@ -31,6 +32,7 @@ function About(props){
                 p = "1vw"
                 flexDir="row"
                 alignItems="center"
+                fontSize={'2xl'}
             >
                 <Link 
                     _focus={{fontWeight: "bolder"}}

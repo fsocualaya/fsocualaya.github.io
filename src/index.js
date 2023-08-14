@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { theme, ThemeProvider } from "@chakra-ui/react"
+import {ThemeProvider } from "@chakra-ui/react"
+import baseTheme from './custom/theme'
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={baseTheme}>
       <App />
     </ThemeProvider>
   </React.StrictMode>,

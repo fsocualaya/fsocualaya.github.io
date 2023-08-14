@@ -3,8 +3,6 @@ import EducationCardLeft from "../../components/Cards/EducationCard/EducationCar
 import EducationCardRight from "../../components/Cards/EducationCard/EducationCardRight";
 
 function Education(props){
-    console.log("This is education")
-
     return (
         <Center
             minH="60vh"
@@ -16,18 +14,27 @@ function Education(props){
                 imageSrc="../img/edu/utec.png"
                 edu="University of Engineering and Technology"
                 field="Computer Science"
-                role="4th year student"
-                url="https://utec.edu.pe/"
-                location="🇵🇪 : [ 2017 - Current ]"
+                role="BSc. Computer Science"
+                url="https://utec.edu.pe/carreras/ciencia-de-la-computacion/acreditacion"
+                location="Lima, 🇵🇪 : [ 2017 - 2022 ]"
             />
 
             <EducationCardRight
+                imageSrc="../img/edu/logo-epita.svg"
+                edu="EPITA: École des Ingénieurs en Informatique"
+                field="Computer Security"
+                role="Exchange Student"
+                url="https://www.epita.fr/"
+                location="Paris, 🇫🇷 : [2021 - 2021]"
+            />
+
+            <EducationCardLeft
                 imageSrc="../img/edu/sers.png"
                 edu="Global SERS"
                 field="AI For Local Value"
                 role="Attendant"
                 url="https://globalgers.org/"
-                location="👨‍💻 : [2020]"
+                location="Remote 👨‍💻 : [2020]"
             />
             
         </Center>
